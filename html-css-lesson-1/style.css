@@ -49,9 +49,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .container {
 	
 	
-	
-	
-    
+		    
 }
 .mainblock {
 	display: flex;	
@@ -62,7 +60,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	padding-top: 50px;
 	padding-left: 50px;
 	padding-right: 50px;
-	
+	margin: 0 auto;
+	width: 800px;
     
 	
 	
@@ -72,6 +71,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     
 }
 .mainblock__img {
+	margin-right: 30px;
+	margin-bottom: 30px;
+
 	
 }
 .avatar {
@@ -102,10 +104,17 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .main__details {
 }
 .paragraph {
+	line-height: 1.2rem;
+	font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .paragraph__first {
+	
+
 }
 .paragraph__second {
+	
 }
 .paragraph__last {
 }
+
+
