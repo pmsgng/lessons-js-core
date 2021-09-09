@@ -125,13 +125,13 @@ html {
     color: black;
 }
 
-}
+
 .paragraph {
-    margin: 16px 0;
+    margin-bottom: 2rem;
     max-width: 700px;
 }
 .paragraph_last {
-    margin-bottom: 48px;
+    margin-bottom: 4rem;
 }
 
 
