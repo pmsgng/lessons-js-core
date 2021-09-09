@@ -81,13 +81,18 @@ html {
     justify-content: center;
 }
 .avatar__picture {
-    background: url(img/avatar.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
+    background: url(./SBER.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
     max-width: 350px;
     border-radius: 50%;
     border: 25px
     solid #fff;
+    margin: 30px 0;
+    z-index: 10;
+    transition: transform 2s;
 }
 .avatar__picture:hover {
+    transform: translateX(100%) rotate(360deg);
+    transition: transform 2s ease;
 }
 
 .contacts {
@@ -116,6 +121,9 @@ html {
     color: gray;
     border-color: #000;
 }
+.contacts__link:hover {
+    color: black;
+}
 
 }
 .paragraph {
@@ -125,3 +133,5 @@ html {
 .paragraph_last {
     margin-bottom: 48px;
 }
+
+
