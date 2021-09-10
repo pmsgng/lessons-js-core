@@ -1,0 +1,137 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+.example-block {
+
+}
+.example-string {
+
+}
+
+body,
+html {
+    width: 100%;
+    background: rgb(0,255,250);
+    background: linear-gradient(15deg, rgba(0,255,250,0.1) 0%, rgba(217,255,142,0.2) 37%, rgba(214,255,154,0.3) 57%, rgba(0,184,63,0.3) 91%);
+    font-size: 16px;
+    color: #000;
+    height: 100%;
+    min-height: 100%;
+}
+.person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 60%;
+    margin: auto;
+
+}
+.person__info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+.person__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.person__details {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.avatar {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-right: 32px;
+    display: flex;
+    justify-content: center;
+}
+.avatar__picture {
+    background: url(./SBER.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
+    max-width: 350px;
+    border-radius: 50%;
+    border: 25px
+    solid #fff;
+    margin: 30px 0;
+    z-index: 10;
+    transition: transform 2s;
+}
+.avatar__picture:hover {
+    transform: translateX(100%) rotate(360deg);
+    transition: transform 2s ease;
+}
+
+.contacts {
+    flex-direction: column;
+    justify-content: center;
+}
+.contacts__name {
+    font-weight: bold;
+    font-size: 32px;
+}
+.contacts__role {
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 32px;
+}
+.contacts__item {
+    font-style: italic;
+}
+.contacts__title {
+    font-weight: bold;
+}
+.contacts__title:after {
+    content: ":";
+}
+.contacts__link {
+    color: gray;
+    border-color: #000;
+}
+.contacts__link:hover {
+    color: black;
+}
+
+}
+.paragraph {
+    margin: 16px 0;
+    max-width: 700px;
+}
+.paragraph_last {
+    margin-bottom: 48px;
+}
+
+
