@@ -67,6 +67,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 2rem;
 }
 .person__details {
     margin: auto;
@@ -80,20 +81,14 @@ html {
     margin-right: 2rem;
     display: flex;
     justify-content: center;
+    /* position: relative; */
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
 }
-.avatar__picture {
-    background: url(./SBER.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
-    max-width: 350px;
-    border-radius: 50%;
-    border: 1.6rem
-    solid #fff;
-    margin: 2rem 0;
-    z-index: 10;
-    transition: transform 2s;
-}
-.avatar__picture:hover {
-    transform: translateX(100%) rotate(360deg);
-    transition: transform 2s ease 0.1s;
+
+  
+
 }
 
 .contacts {
@@ -137,5 +132,35 @@ html {
     margin-bottom: 4rem;
 }
 
+.avatar__picture {
+    width: 300px;
+    height: 300px;
+    border: 16px aqua;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    border: 1rem solid floralwhite;
+    border-radius: 50%;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+.front-pick {
+    
+}
 
- 
+.back-pick {
+    transform: rotateY(180deg);
+}
+    
+.avatar:hover .front-pick {transform: rotateY(180deg);}
+.avatar:hover .back-pick {transform: rotateY(360deg);}
+
+
+
+.heading {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Luckiest Guy', cursive;
+    display: block;
+}
